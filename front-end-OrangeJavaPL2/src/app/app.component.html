@@ -1,0 +1,31 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<section id="team" class="team_area section-padding">
+  <div class="container">
+    <h2 class="title_spectial">Taste the best breads in the city</h2>
+    <div class="row text-center">
+      <div *ngFor="let bread of breads" class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+<!--        for bread in breads {
+bread.getName
+}
+
+}-->
+        <div class="our-team">
+          <div class="single-team">
+            <img src="https://www.osmykolorteczy.pl/wp-content/uploads/2020/02/bagietki-na-piwie-480x270.jpg" class="img-fluid" alt="">
+            <h3>{{bread.name}}</h3>
+            <p>{{bread.breadType}}</p>
+            <p>{{bread.price}} PLN</p>
+          </div>
+          <ul class="social">
+            <li><a href="#" class="fa fa-facebook facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter twitter"></a></li>
+            <li><a href="#" class="fa fa-google google"></a></li>
+          </ul>
+        </div><!--- END OUR TEAM -->
+      </div><!--- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</section>
+
+
+<!--{Back-end(Spring)}---- <REST_API> ------{Front-end (Angular)}                  -->
